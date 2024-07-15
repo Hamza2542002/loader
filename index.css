@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.loader span:nth-child(2) {
+  /* background-color: aqua; */
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  /* background-color: green; */
+  animation-delay: 0.4s;
+}
+
+.loader span:nth-child(4) {
+  /* background-color: yellow; */
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 0.8s;
+  /* background-color: rgb(149, 255, 0); */
+}
+
+@keyframes loading {
+  50% {
+    background-color: blue;
+    transform: scale(0) translateY(10px);
+  }
+}
